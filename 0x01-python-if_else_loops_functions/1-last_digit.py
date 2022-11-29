@@ -5,7 +5,7 @@ negnumber = number * -1
 lastDigit = 0
 
 if number < 0:
-    lastDigit = -negnumber % 10
+    lastDigit = -(negnumber % 10)
 else:
     lastDigit = number % 10
 
