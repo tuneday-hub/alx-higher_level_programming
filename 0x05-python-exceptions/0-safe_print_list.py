@@ -14,7 +14,7 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end="")
             noOfPrintedElement += 1
         except IndexError:
-          break
+            break
     print("")
     return noOfPrintedElement
 
