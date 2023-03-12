@@ -16,7 +16,7 @@ class Square:
         @size:
             The size of the square, must be a +ve integer
         '''
-        self.size = size
+        self.__size = size
 
     @property
     '''Getter for size'''
