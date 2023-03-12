@@ -16,25 +16,11 @@ class Square:
         @size:
             The size of the square, must be a +ve integer
         '''
-        self.__size = size
 
-    @property
-    '''Getter for size'''
-
-    def size(self):
-        '''Retrieving the value of size'''
-        return self.__size
-
-    @size.setter
-    '''Setter for size'''
-
-    def size(self, value):
-        '''Value of square size'''
-        try:
-            if type(value) is int:
-                if value < 0:
+            if type(size) is int:
+                if size < 0:
                     raise ValueError('Size must be >= 0')
                 else:
-                    self.__size = value
+                    self.__size = size
             else:
                 raise TypeError('Size must be an integer')
