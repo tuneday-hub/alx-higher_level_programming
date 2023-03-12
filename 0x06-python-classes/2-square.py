@@ -13,10 +13,15 @@ class Square:
         """
         self.__size = size
 
-        if type(size) is int:
-            if size < 0:
-                raise ValueError('Size must be >= 0')
+        def get_size(self):
+            return self.__size
+
+        def set_size(self, size):
+            
+            if type(size) is int:
+                if size < 0:
+                    raise ValueError('Size must be >= 0')
+                else:
+                    self.__size = size
             else:
-                self.__size = size
-        else:
-            raise TypeError('Size must be an integer')
+                raise TypeError('Size must be an integer')
