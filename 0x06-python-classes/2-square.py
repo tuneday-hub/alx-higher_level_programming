@@ -13,7 +13,7 @@ class Square:
             size:
                 The size of the square, must be a +ve integer
         """
-         if type(size) is not int:
+         if not isinstance(size, int):
             raise TypeError('Size must be an integer')
         elif size < 0:
             raise ValueError('Size must be >= 0')
