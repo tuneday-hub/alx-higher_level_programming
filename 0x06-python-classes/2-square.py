@@ -14,7 +14,6 @@ class Square:
         @size:
             The size of the square, must be a +ve integer
         '''
-
         if type(size) is int:
             if size < 0:
                 raise ValueError('Size must be >= 0')
