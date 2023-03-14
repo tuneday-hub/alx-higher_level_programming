@@ -4,11 +4,11 @@
   concept of process.argv
   const firstArg = process.argv[2], secondArg = process.argv[3];
   if (firstArg === undefined || secondArg === undefined) {
-    console.log(firstArg + ' is ' + secondArg);
+  ..console.log(firstArg + ' is ' + secondArg);
   } else if (firstArg != undefined || secondArg === undefined) {
-    console.log(firstArg + ' is ' + secondArg);
+  ..console.log(firstArg + ' is ' + secondArg);
   } else {
-    console.log(firstArg + ' is ' + secondArg);
+  ..console.log(firstArg + ' is ' + secondArg);
   }
 */
 console.log(process.argv[2] + ' is ' + process.argv[3]);
